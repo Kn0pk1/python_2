@@ -1,0 +1,13 @@
+import random
+K = int(input("Количество попыток " ))
+numder = int(input("До какого числа " ))
+a = random.randint(1, numder)
+for i in range(1, K + 1):
+    player = int(input())
+    if player == a:
+        print("вы угадали число ", a, "Количество попыток", i)
+        break
+    elif player < a:
+        print('Загаданное число больше чем ', player)
+    else:
+        print('Загаданное число меньше чем ', player) 
